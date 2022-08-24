@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement</title>
+    <!-- <script src="createElement.js"></script> -->
+</head>
+<body id="lol">
+    <script>
+    // Specify the string from which 
+    // the elements would be created
+    var x = "h2";
+    var y = "p";
+  
+    // Creating the elements 
+    var line1 =
+        document.createElement(x);
+    var line2 =
+        document.createElement(y);
+  
+    // Insert text in the element
+    line1.innerText =
+      "This is the new heading element";
+    line2.innerText =
+      "This is the new paragraph element";
+  
+    // Add the element to the body 
+    document.body.appendChild(line1);
+    document.body.appendChild(line2);
+    </script>
+</body>
+</html>
